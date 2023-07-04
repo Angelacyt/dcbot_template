@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 module.exports = {
     data: new SlashCommandBuilder().setName("embed").setDescription("show an embed"),
     async execute(client, interaction) {
-        const embed = new EmbedBuilder().setTitle("I'm an Embed");
+        const embed = new EmbedBuilder().setTitle("官方通知").setDescription('已讀此訊息者已經浪費了一秒鐘').setColor('Gold');
         interaction.reply({ embeds: [embed] });
     },
 };
